@@ -1,5 +1,6 @@
 <?php
-
+require_once 'helpers/array.helper.php';
+require_once 'helpers/form.helper.php';
 /*
 |--------------------------------------------------------------------------
 | Create The Application

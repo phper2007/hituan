@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::match(['get', 'post'], '/shunfeng', 'ShunfengController@index');
+Route::match(['get', 'post'], 'sf/standard', 'SfController@standard')->name('sf.standard');
+Route::match(['post'], 'sf/finish', 'SfController@finish')->name('sf.finish');
+Route::match(['get', 'post'], 'product/analysis', 'ProductController@analysis')->name('product.analysis');
+Route::match(['post'], 'product/save', 'ProductController@save')->name('product.save');
